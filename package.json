@@ -1,13 +1,12 @@
 {
-  "name": "example-typescript-package",
-  "version": "0.2.2",
+  "name": "random-react-ui",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "umd:main": "dist/umd/index.js",
   "types": "dist/types/index.d.js",
   "scripts": {
-    "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "build": "npm run build:cjs && npm run build:esm && npm run build:umd && npm run build:types",
@@ -40,16 +39,16 @@
     "esm",
     "umd"
   ],
-  "author": "Tom Chen <tomchen.org@gmail.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/tomchen/example-typescript-package",
   "repository": {
     "type": "git",
-    "url": "git@github.com:tomchen/example-typescript-package.git"
+    "url": "git+https://github.com/FilipTalaga/random-react-ui.git"
   },
+  "author": "Filip Talaga",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tomchen/example-typescript-package/issues"
+    "url": "https://github.com/FilipTalaga/random-react-ui/issues"
   },
+  "homepage": "https://github.com/FilipTalaga/random-react-ui#readme",
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -60,7 +59,6 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.2",
     "jest": "^27.2.0",
     "pinst": "^2.1.6",
     "prettier": "^2.4.0",
